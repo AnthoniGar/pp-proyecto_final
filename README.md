@@ -1,4 +1,4 @@
-# Proyectos de programacion - Proyecti Final
+# Proyectos de Programacion - Proyecto Final
 
 |               |               |               |
 |---------------|:-------------:|:-------------:|
