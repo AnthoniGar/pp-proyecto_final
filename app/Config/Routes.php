@@ -14,4 +14,7 @@ $routes->get('menu_admin','Home::verMenuAdmin');
 $routes->get('menu_secre','Home::verMenuSecre');
 $routes->get('menu_ventas','Home::verMenuVentas');
 
+// rutas para mostrar datos de las tablas
+$routes->get('estados','EstadosController::index');
+
 
