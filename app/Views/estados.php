@@ -25,10 +25,8 @@
                 </thead>
                 <tbody>
                     <?php
-                    //recorrer todo el array (tabla) y cada fila
-                    // o registro le da el nombre de &genero
-
-                        foreach ($datos as $estado){//inicio de ciclo
+            
+                        foreach ($datos as $estado){
 
                        
                     ?>
@@ -40,7 +38,7 @@
                         </td>
                     </tr>
                     <?php
-                     } //fin del ciclo
+                     }
                     ?>
                 </tbody>
             </table>
