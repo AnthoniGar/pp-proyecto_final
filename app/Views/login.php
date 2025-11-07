@@ -13,8 +13,10 @@
     </header>
 <br>
   <div class="class container">
-    <div class="class row">
-          <center><h1 class="bg-secondary border border-dark mb-2" >INICIAR SESIÓN</h1></center><br>
+    <div class="class row justify-content-center">
+        <div class="col-4 text-center">
+            <center><h1 class="mb-2" >INICIAR SESIÓN</h1></center><br>
+        </div>
     </div>
   </div>
    <br>
