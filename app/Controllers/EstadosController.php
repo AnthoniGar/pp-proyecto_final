@@ -33,5 +33,16 @@ class EstadosController extends BaseController
         $datos['datos']=$estado->where('id_estado',$codigo)->first();
         return view('form_editar_estado',$datos);
     }
+    public function modificarEstado()
+    {
+        $estado= new EstadosModel();
+        $datos=[
+             
+            'nombre'=>$this->request->getpost('txt_nombre'),
+        ];
 
+        $codigo = $this->request->getPost('txt_codigo');
+        $estado->update($codigo,$datos);
+        return $this ->index();
+        }
     }
