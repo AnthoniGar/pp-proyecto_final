@@ -83,6 +83,7 @@
                         
                         <td>
                             <a href="<?=base_url('eliminar_pago/').$pago['id_pagos'];?>" class="btn btn-success"><i class="bi bi-trash3"></i></a>
+                            <a href="<?=base_url('buscar_pago/').$pago['id_pagos'];?>"class="btn btn-success"><i class="bi bi-pencil-square"></i></a>
                         </td>
                     </tr>
                     <?php
