@@ -1,4 +1,4 @@
-<!doctype html>
+git pull origin main<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -14,7 +14,38 @@
     <h1>ESTADOS</h1>
     <p class="mb-2" >CERRAR SESIÓN <a href="<?=base_url('cerrar_sesion')?>"class="btn btn-success"><i class="bi bi-power"></i></a></p>
     <p class="mb-2" >REGRESAR <a href="<?=base_url('menu_admin')?>"class="btn btn-success"><i class="bi bi-arrow-90deg-left"></i></a></p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Agregar Estado
+  <i class="bi bi-person-fill-add"></i>
+</button>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Estado</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="<?=base_url('agregar_estado');?>" method="post">
+        <label for="txt_codigo" class="form-label"> Id Estado </label>
+        <input type="number" name="txt_codigo" id="txt_codigo" class="form-control">
+         <label for="txt_nombre" class="form-label"> Nombre </label>
+        <input type="text" name="txt_nombre" id="txt_nombre" class="form-control">
+        <button type="submit" class="form-control btn btn-danger mt-2">Guardar</button>
+        
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
             <table class="table">
                 <thead>
                     <tr>

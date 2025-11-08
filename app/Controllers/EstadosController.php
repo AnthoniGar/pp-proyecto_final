@@ -10,4 +10,15 @@ class EstadosController extends BaseController
         $datos ['datos'] = $estado->findAll();
         return view('estados',$datos);
     }
+    public function agregarEstado()
+    {
+        $estado = new EstadosModel();
+        $datos=[
+            'id_estado'=>$this->request->getpost('txt_codigo'),
+            'nombre'=>$this->request->getpost('txt_nombre'),
+        ];
+        
+        $estado->insert($datos);
+        return $this->index();
+        }
     }
