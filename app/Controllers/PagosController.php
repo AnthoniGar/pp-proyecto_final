@@ -33,4 +33,10 @@ class PagosController extends BaseController
         $pago->delete($id);
         return $this->index();
     }
+    public function buscarPago($codigo)
+    {
+        $pago = new PagosModel();
+        $datos['datos']=$pago->where('id_pagos',$codigo)->first();
+        return view('form_editar_pago',$datos);
+    }
     }

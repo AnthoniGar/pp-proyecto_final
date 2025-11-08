@@ -30,6 +30,7 @@ $routes->get('eliminar_pago/(:num)','PagosController::eliminarPago/$1');
 
 //rutas para buscar datos de las tablas de la base de datos
 $routes->get('buscar_estado/(:num)','EstadosController::buscarEstado/$1');
+$routes->get('buscar_pago/(:num)','PagosController::buscarPago/$1');
 
 
 //rutas para modificar datos de las tablas de la base de datos
