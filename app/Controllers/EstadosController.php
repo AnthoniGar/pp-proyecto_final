@@ -27,5 +27,11 @@ class EstadosController extends BaseController
         $estado->delete($id);
         return $this->index();
     }
+    public function buscarEstado($codigo)
+    {
+        $estado = new EstadosModel();
+        $datos['datos']=$estado->where('id_estado',$codigo)->first();
+        return view('form_editar_estado',$datos);
+    }
 
     }
