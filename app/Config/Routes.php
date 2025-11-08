@@ -18,3 +18,7 @@ $routes->get('menu_ventas','Home::verMenuVentas');
 $routes->get('estados','EstadosController::index');
 
 
+//rutas para agregar datos a las tablas de la base de datos
+$routes->post('agregar_estado','EstadosController::agregarEstado');
+
+
