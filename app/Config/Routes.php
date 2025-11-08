@@ -22,3 +22,5 @@ $routes->get('estados','EstadosController::index');
 $routes->post('agregar_estado','EstadosController::agregarEstado');
 
 
+//rutas para eliminar datos de las tablas de la base de datos
+$routes->get('eliminar_estado/(:num)','EstadosController::eliminarEstado/$1');

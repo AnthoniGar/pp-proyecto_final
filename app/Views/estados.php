@@ -65,7 +65,7 @@ git pull origin main<!doctype html>
                         <td> <?=$estado ['id_estado']; ?> </td>
                         <td>  <?=$estado ['nombre']; ?>      </td>
                         <td>
-                         
+                           <a href="<?=base_url('eliminar_estado/').$estado['id_estado'];?>" class="btn btn-danger"><i class="bi bi-trash3"></i></a>
                         </td>
                     </tr>
                     <?php

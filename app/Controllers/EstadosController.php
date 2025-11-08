@@ -21,4 +21,11 @@ class EstadosController extends BaseController
         $estado->insert($datos);
         return $this->index();
         }
+    public function eliminarEstado($id)
+    {
+        $estado = new EstadosModel();
+        $estado->delete($id);
+        return $this->index();
+    }
+
     }
