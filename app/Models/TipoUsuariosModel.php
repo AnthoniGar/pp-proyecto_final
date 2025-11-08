@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class TipoUsuariosModel extends Model
+{
+    protected $table         = 'tipos_usuarios';
+    protected $primaryKey = 'tipo_usuario_id';
+    protected $allowedFields = [
+        'tipo_usuario_id', 'tipo','descripcion'
+    ];
+  
+}
