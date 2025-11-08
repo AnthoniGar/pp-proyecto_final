@@ -20,6 +20,8 @@ $routes->get('pagos','PagosController::index');
 
 //rutas para agregar datos a las tablas de la base de datos
 $routes->post('agregar_estado','EstadosController::agregarEstado');
+$routes->post('agregar_pago','PagosController::agregarPago');
+
 
 
 //rutas para eliminar datos de las tablas de la base de datos
