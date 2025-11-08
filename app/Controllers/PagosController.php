@@ -26,4 +26,11 @@ class PagosController extends BaseController
         $pago->insert($datos);
         return $this->index();
         }
+        
+         public function eliminarPago($id)
+         {
+        $pago = new PagosModel();
+        $pago->delete($id);
+        return $this->index();
+    }
     }
