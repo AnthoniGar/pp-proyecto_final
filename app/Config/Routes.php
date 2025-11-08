@@ -35,3 +35,4 @@ $routes->get('buscar_pago/(:num)','PagosController::buscarPago/$1');
 
 //rutas para modificar datos de las tablas de la base de datos
 $routes->post('modificar_estado','EstadosController::modificarEstado');
+$routes->post('modificar_pago','PagosController::modificarPago');

@@ -39,4 +39,21 @@ class PagosController extends BaseController
         $datos['datos']=$pago->where('id_pagos',$codigo)->first();
         return view('form_editar_pago',$datos);
     }
+    public function modificarPago()
+    {
+        $pago= new PagosModel();
+        $datos=[
+            'fecha_pagos'=>$this->request->getPost('txt_pago'),
+            'monto'=>$this->request->getpost('txt_monto'),
+            'id_metodo_pago'=>$this->request->getpost('txt_metodo'),
+            'id_estado'=>$this->request->getpost('txt_estado'),
+            'id_cliente'=>$this->request->getpost('txt_cliente'),
+           
+            
+        ];
+
+        $codigo = $this->request->getPost('txt_codigo');
+        $pago->update($codigo,$datos);
+        return $this ->index();
+        }
     }
