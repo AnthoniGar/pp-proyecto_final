@@ -16,7 +16,7 @@ $routes->get('menu_ventas','Home::verMenuVentas');
 
 // rutas para mostrar datos de las tablas de la base de datos
 $routes->get('estados','EstadosController::index');
-
+$routes->get('pagos','PagosController::index');
 
 //rutas para agregar datos a las tablas de la base de datos
 $routes->post('agregar_estado','EstadosController::agregarEstado');
