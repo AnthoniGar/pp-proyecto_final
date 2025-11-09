@@ -29,7 +29,8 @@
           <center><h1 class="bg-secondary border border-dark mb-2" >MENU PRINCIPAL</h1></center><br>
       <div class="class col-6">
             <a href="pagos"  class="btn btn-warning mt-4" >1) PAGOS </a><br>
-            </div>
+            
+        </div>
             
     </div>
     <br>

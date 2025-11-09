@@ -45,6 +45,7 @@
                 <a href="pagos" class="btn btn-warning mt-4">5) Pagos </a><br>
                 <a href="usuarios" class="btn btn-warning mt-4">6) Usuarios </a><br>
                 <a href="tipos_usuarios" class="btn btn-warning mt-4">7) Tipos de Usuarios </a><br>
+                
 
             </div>
         </div>
