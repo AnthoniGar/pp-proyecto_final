@@ -32,7 +32,7 @@ $routes->post('agregar_usuario','UsuarioController::agregarUsuario');
 
 //rutas para eliminar datos de las tablas de la base de datos
 $routes->get('eliminar_cliente/(:num)','ClientesController::eliminarCliente/$1');
-$routes->get('eliminar_metodos_pagos/(:num)','MetodosPagosController::eliminarMetodosPagos');
+$routes->get('eliminar_metodos_pagos/(:num)','MetodosPagosController::eliminarMetodosPagos/$1');
 $routes->get('eliminar_estado/(:num)','EstadosController::eliminarEstado/$1');
 $routes->get('eliminar_pago/(:num)','PagosController::eliminarPago/$1');
 $routes->get('eliminar_tusuario/(:num)','TipoUsuariosController::eliminarTusuario/$1');

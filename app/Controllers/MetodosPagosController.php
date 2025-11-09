@@ -32,7 +32,7 @@ class MetodosPagosController extends BaseController
     {
         $metodos_pagos = new MetodosPagosModel();
         $datos['datos']=$metodos_pagos->where('id_metodo_pago',$codigo)->first();
-        return view('form_editar_metodo_pago',$datos);
+        return view('form_editar_metodos_pagos',$datos);
     }
     public function modificarMetodosPagos()
         {
